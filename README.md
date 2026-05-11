@@ -1,25 +1,26 @@
 # CarsBrandsAndModels
 
 A small image dataset of **10,000** car photos organized by brand/model.
+Original download link: [here](https://nextcloud.ig.umons.ac.be/s/BooirG6KkHJ58XB)
 
 ## Dataset structure
 
 - **10 brands**
-- **10 models per brand** (except for `BMW`, `Hyundai`, `Ford`)
+- **10 models per brand** (except for `BMW`, `Hyundai` (9) and `Ford` (8))
 - **1000 images per brand**
 
-Total: `10 × 10 × 100 = 10,000` images.
+Total: `10 × 1000 = 10,000` images.
 
 ## File naming convention
 
 Each image file follows:
 
-`AA_ZZ_Brand_Model_Number.jpg`
+`A_Z_Brand_Model_Number.jpg`
 
 Where:
 
-- `AA` = `brand_id` (a digit `0–9`)
-- `ZZ` = `model_id` (a digit `0–9`)
+- `A` = `brand_id` (a digit `0–9`)
+- `Z` = `model_id` (a digit `0–9`)
 - `Brand` = brand name (string)
 - `Model` = model name (string)
 - `Number` = image global index (a number)
@@ -44,8 +45,3 @@ const carsByBrand = {
   "Audi": ["A1", "A3", "A6", "A8", "Q3", "Q5", "Q7", "Q8", "R8", "TT"],
 };
 ```
-
-
-## License
-
-Add your dataset/license terms here (e.g., CC BY 4.0, CC BY-NC, custom license, etc.).
